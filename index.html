@@ -1,0 +1,51 @@
+<h1>MultiSquare Tic Tac Toe Game<br/><h2>by Mehlam Saifudeen</h2></h1>
+Player 1 (Fruits)
+<select name="Player1-Piece" id="Player1-Piece">
+  <option value="🍌">🍌</option>
+  <option value="🍉">🍉</option>
+  <option value="🍊">🍊</option>
+  <option value="🍍">🍍</option>
+  <option value="🍎">🍎</option>
+  <option value="🍐">🍐</option>
+  <option value="🍒">🍒</option>
+</select>
+<br/>
+<br/>
+Player 2 (Vegetables)
+<select name="Player2-Piece" id="Player2-Piece">
+  <option value="🍆">🍆</option>
+  <option value="🍅">🍅</option>
+  <option value="🍄">🍄</option>
+  <option value="🌽">🌽</option>
+  <option value="🌶">🌶</option>
+</select>
+<br/>
+<br/>
+
+<label for="boardSize">Choose Board Size:</label>
+<select name="boardSize" id="boardSize">
+  <option value="3">3x3</option>
+  <option value="4">4x4</option>
+  <option value="5">5x5</option>
+  <option value="6">6x6</option>
+  <option value="7">7x7</option>
+</select>
+
+<br/>
+<br/>
+
+<button id="start-game" onclick="startGame()" class="btnfos btnfos-a">Start Game</button>
+<button id="clear-board" onclick="clearBoard()" class="btnfos btnfos-a">Clear Board</button>
+<button id="reset-game" onclick="resetGame()" class="btnfos btnfos-a">Reset Settings</button>
+
+<br/>
+<br/>
+
+<div id="turn"></div>
+
+<br/>
+
+<div id="board" class="hide">
+</div>
+
+<h1 class="winner">
