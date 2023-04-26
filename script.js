@@ -1,5 +1,5 @@
 const players = ["Fruits", "Vegetables"];
-  let pieces = [document.getElementById("Player1-Piece").value, document.getElementById("Player2-Piece").value];
+let pieces = [document.getElementById("Player1-Piece").value, document.getElementById("Player2-Piece").value];
 let turn = 0;
 let gameOver = false;
 let boardSize = parseInt(document.getElementById("boardSize").value);
@@ -33,7 +33,7 @@ let changeBoardSize = (event) => {
 
 document.getElementById("boardSize").addEventListener("change", changeBoardSize);
 
-const startGame = () => {
+let startGame = () => {
   clear_board.removeAttribute("disabled");
   clear_board.classList.add("btnfos-a");
   pieces = [document.getElementById("Player1-Piece").value, document.getElementById("Player2-Piece").value];
